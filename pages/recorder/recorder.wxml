@@ -1,0 +1,84 @@
+<!-- pages/question01/question01.wxml -->
+<view class="global-page">
+  <view class="title">In this section, you are going to read 30 words. Try to read loudly and clearly.</view>
+
+  <view class="content">
+    <block wx:if="{{recording==true}}">
+      <view class="word">
+      <text>{{word}}</text>
+      </view>
+      <view class="clock">
+        <block wx:if="{{clockFlag==true}}">
+          <view class='countDown'>请在
+            <text style='color:red'>{{countDownNum}}</text>s内念出该单词的读音
+          </view>
+        </block>
+      </view>
+    </block>
+
+  </view>
+
+
+  <view class="page-body">
+    <block wx:if="{{recording === false && playing === false && hasRecord === false}}">
+      <view class="page-body-time">
+        <text class="time-big">{{formatedRecordTime}}</text>
+      </view>
+      <view class="page-body-buttons">
+        <view class="page-body-button"></view>
+        <view class="page-body-button" bindtap="startRecord">
+          <image src="/image/record.png"></image>
+        </view>
+        <view class="page-body-button"></view>
+      </view>
+    </block>
+
+    <block wx:if="{{recording === true}}">
+      <view class="page-body-time">
+        <text class="time-big">{{formatedRecordTime}}</text>
+      </view>
+      <view class="page-body-buttons">
+        <view class="page-body-button"></view>
+        <view class="page-body-button" bindtap="stopRecord">
+          <view class="button-stop-record"></view>
+        </view>
+        <view class="page-body-button"></view>
+      </view>
+    </block>
+
+    <block wx:if="{{hasRecord === true && playing === false}}">
+      <view class="page-body-time">
+        <text class="time-big">{{formatedPlayTime}}</text>
+        <text class="time-small">{{formatedRecordTime}}</text>
+      </view>
+      <view class="page-body-buttons">
+
+        <view class="page-body-button" bindtap="playVoice">
+          <image src="/image/play.png"></image>
+        </view>
+
+      </view>
+    </block>
+
+    <block wx:if="{{hasRecord === true && playing === true}}">
+      <view class="page-body-time">
+        <text class="time-big">{{formatedPlayTime}}</text>
+        <text class="time-small">{{formatedRecordTime}}</text>
+      </view>
+      <view class="page-body-buttons">
+
+        <view class="page-body-button" bindtap="pauseVoice">
+          <image src="/image/pause.png"></image>
+        </view>
+
+      </view>
+    </block>
+    <!-- <view class='caption'>Caution : you can only record it once</view> -->
+  </view>
+
+  <view class="button-page">
+    <block wx:if="{{recordedFlag==true}}">
+      <view class='button' bindtap="click">next</view>
+    </block>
+  </view>
+</view>

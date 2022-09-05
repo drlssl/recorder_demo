@@ -1,0 +1,121 @@
+/* pages/login/login.wxss */
+/* page {
+  left: 0rpx;
+  right: 0rpx;
+  background-color:wheat;
+} */
+.whole-page {
+  height: 100vh;
+  width: 750rpx
+}
+
+.part1 {
+  /* align-items: center; */
+  height: 30%;
+  display: flex;
+  justify-content: center;
+}
+
+.part2 {
+  height: 40%;
+}
+
+.part3 {
+  height: 20%;
+}
+
+.img {
+  height: 100%;
+  width: 750rpx;
+}
+
+.input-part {
+  padding-top: 6%;
+  padding-left: 3%;
+  padding-right: 3%;
+  align-items: center;
+
+}
+
+.radio-part {
+  /* align-items: center; */
+  justify-content: center;
+  display: flex;
+  box-sizing: border-box;
+  margin-bottom: 30rpx;
+  margin-top: 80rpx;
+  padding: 0 15px;
+}
+
+.plas {
+  font-size: 40rpx;
+  color: #CCCCCC;
+}
+
+
+.view-contain-ti {
+  display: flex;
+  height: 100rpx;
+  margin: 20rpx;
+  border: 5rpx solid #f76968;
+  border-radius: 12rpx;
+}
+
+.text-ti {
+  position: absolute;
+  font-size: 38rpx;
+  background: white;
+  margin: -20rpx 0 0 20rpx;
+  padding: 0 5rpx;
+  color: rgb(143, 145, 156);
+}
+
+.input {
+  font-size: 50rpx;
+  margin: auto 70rpx;
+}
+
+.radioText {
+  font-size: 40rpx;
+  font-weight: 300;
+  display: flex;
+}
+
+.inputs {
+  line-height: 120rpx;
+  font-size: 30rpx;
+  color: #000;
+  margin: auto;
+  margin-left: 10rpx;
+  width: 100%;
+}
+
+.click {
+  width: 90%;
+  height: 100rpx;
+  line-height: 100rpx;
+  margin: auto;
+  margin-top: 80rpx;
+  margin-left: 5%;
+  margin-right: 5%;
+  background-color: #f76968;
+  text-align: center;
+  color: white;
+  font-size: 40rpx;
+  border-radius: 6rpx;
+}
+
+
+.register {
+  /* height: 30%; */
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  padding-top: 3%;
+}
+
+.no-account {
+  color: black;
+  font-size: 28rpx;
+  margin-left: 15rpx;
+  font-family: PingFangSC-regular;
+}

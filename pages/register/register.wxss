@@ -1,0 +1,30 @@
+page {
+  /* background-color: var(--weui-BG-1); */
+  height: 100%;
+  /* font-size: 16px; */
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--weui-FG-0);
+  display: flex;
+  justify-content: center;
+}
+
+page>view {
+  width: 100vw;
+  max-width: 600px;
+}
+
+.buttonhover {
+  width: 80%;
+  height: 90rpx;
+  line-height: 100rpx;
+  margin: auto;
+  margin-top: 110rpx;
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: center;
+  color: white;
+  font-size: 36rpx;
+  border-radius: 6rpx;
+  background-color: #e25050;
+}

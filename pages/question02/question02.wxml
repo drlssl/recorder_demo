@@ -1,0 +1,182 @@
+<!--pages/question02/question02.wxml-->
+<view class="global-page">
+  <view class="part1">
+    <view class="title">Please choose one of these topics to talk for 1 minute after 90 seconds for preparation. </view>
+    <view class="timeLeft">
+    </view>
+  </view>
+
+  <view class="part2">
+    <view class="swiper">
+      <block wx:if="{{radio==1}}">
+        <view>
+          <view>
+            <text class="topic-text">Topic 1</text>
+          </view>
+          <view>
+            <text class="content-text">What's your major please ? Why did you choose that major ?</text>
+          </view>
+        </view>
+      </block>
+      <block wx:if="{{radio==2}}">
+        <view>
+          <view>
+            <text class="topic-text">Topic 2</text>
+          </view>
+          <view>
+            <text class="content-text">How do you feel about the city you live at present ?</text>
+          </view>
+        </view>
+      </block>
+      <block wx:if="{{radio==3}}">
+        <view>
+          <view>
+            <text class="topic-text">Topic 3</text>
+          </view>
+          <view>
+            <text class="content-text">What's the weather like in your hometown ?</text>
+          </view>
+        </view>
+      </block>
+    </view>
+  </view>
+
+  <view class="part3">
+    <view class='caption'>Just tap it to pick up your topic. </view>
+    <view class='radio-section'>
+      <van-radio-group value="{{ radio }}" bind:change="onChange" direction='horizontal'>
+        <van-radio shape="square" checked-color='#f76968' name="1" icon-size="50rpx"><text class="radioText">Topic 1</text></van-radio>
+        <van-radio shape="square" checked-color='#f76968' name="2" icon-size="50rpx"><text class="radioText">Topic 2</text></van-radio>
+        <van-radio shape="square" checked-color='#f76968' name="3" icon-size="50rpx"><text class="radioText">Topic 3</text></van-radio>
+      </van-radio-group>
+    </view>
+  </view>
+
+  <view class="part4">
+    <view class="page-section">
+      <block wx:if="{{recording === false && playing === false && hasRecord === false}}">
+        <view class="page-body-time">
+          <!-- <text class="time-big">{{formatedRecordTime}}</text> -->
+          <block wx:if="{{clockFlag==true}}">
+            <view class='countDown'>请在
+              <text style='color:red'>{{countDownNum}}</text>s内点击话筒按钮开始录音
+            </view>
+          </block>
+        </view>
+        <view class="page-body-buttons">
+          <view class="page-body-button"></view>
+          <view class="page-body-button" bindtap="startRecord">
+            <image src="/image/record.png"></image>
+          </view>
+          <view class="page-body-button"></view>
+        </view>
+      </block>
+
+      <block wx:if="{{recording === true}}">
+        <view class="page-body-time">
+          <text class="time-big">{{formatedRecordTime}}</text>
+        </view>
+        <view class="page-body-buttons">
+          <view class="page-body-button"></view>
+          <view class="page-body-button" bindtap="stopRecord">
+            <view class="button-stop-record"></view>
+          </view>
+          <view class="page-body-button"></view>
+        </view>
+      </block>
+
+      <block wx:if="{{hasRecord === true && playing === false}}">
+        <view class="page-body-time">
+          <text class="time-big">{{formatedPlayTime}}</text>
+          <text class="time-small">{{formatedRecordTime}}</text>
+        </view>
+        <view class="page-body-buttons">
+          <view class="page-body-button"></view>
+          <view class="page-body-button" bindtap="playVoice">
+            <image src="/image/play.png"></image>
+          </view>
+          <!-- <block wx:if="{{retryFlag==false}}">
+            <view class="page-body-button" bindtap="clear">
+              <image src="/image/trash.png"></image>
+            </view>
+          </block> -->
+        </view>
+      </block>
+
+      <block wx:if="{{hasRecord === true && playing === true}}">
+        <view class="page-body-time">
+          <text class="time-big">{{formatedPlayTime}}</text>
+          <text class="time-small">{{formatedRecordTime}}</text>
+        </view>
+        <view class="page-body-buttons">
+          <view class="page-body-button" bindtap="stopVoice">
+            <image src="/image/stop.png"></image>
+          </view>
+          <view class="page-body-button" bindtap="pauseVoice">
+            <image src="/image/pause.png"></image>
+          </view>
+          <!-- <block wx:if="{{retryFlag==false}}">
+            <view class="page-body-button" bindtap="clear">
+              <image src="/image/trash.png"></image>
+            </view>
+          </block> -->
+        </view>
+      </block>
+    </view>
+    <!-- <block wx:if="{{retryFlag==true}}">
+      <view class='caption'>Caution : you can re-record it just for one time </view>
+    </block>
+    <block wx:if="{{retryFlag==false}}">
+      <view class='caption'>Caution : you can re-record it if touch the trash button</view>
+    </block> -->
+  </view>
+
+
+  <view class="part5">
+
+    <block wx:if="{{recordedFlag==true&&uploadFlag==false}}">
+      <!-- <view class="button" hover-class="hover" bindtap="upload">
+        upload it !
+      </view> -->
+      <!-- <view style="height: 70%;justify-content: center;padding-left: 26%;">
+        <view style="width: 350rpx;">
+          <van-button square type="primary" color=" #f76968" size='large' bind:click='upload'>
+            <text style="font-size: 40rpx;">上传\nupload</text>
+          </van-button>
+        </view>
+      </view> -->
+      <view style="justify-content: center;display: flex;">
+        <button style="background-color: #f76968;" class='weui-btn' type="warn" bindtap="upload"><text>上传\nupload</text></button>
+      </view>
+    </block>
+
+    <block wx:if="{{recordedFlag==true&&uploadFlag==true}}">
+      <view style="justify-content: center;display: flex;">
+        <button style="background-color: #f76968;" class='weui-btn' type="warn" bindtap="next"><text style="font-size: 35rpx;">下一题\nnext</text></button>
+      </view>
+      <!-- <view style="height: 70%;justify-content: center;padding-left: 26%;">
+        <view style="width: 350rpx;">
+          <van-button square type="primary" color=" #f76968" size='large' bind:click='next'>
+            <text style="font-size: 40rpx;">下一题\nnext</text>
+          </van-button>
+        </view>
+      </view> -->
+      <!-- <view class='button' hover-class="hover" bindtap="next">Next</view> -->
+    </block>
+  </view>
+</view>
+
+<view>
+  <van-overlay show="{{overlay_show}}">
+    <view class="wrapper" style="display: flex;flex-direction: column;justify-content: center;">
+      <text style="color: white;padding-bottom: 10%;font-size: x-large;" decode="{{true}}">&nbsp;uploading ~</text>
+      <view bindtap="increase">
+        <van-circle value="{{ progressValue }}" speed='{{80}}' color="#e25050" stroke-width="15" clockwise="{{false}}" />
+      </view>
+    </view>
+  </van-overlay>
+
+  <view style="display:none;justify-content: center;">
+    <van-toast id="van-toast" />
+  </view>
+</view>

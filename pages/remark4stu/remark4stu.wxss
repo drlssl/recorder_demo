@@ -1,0 +1,98 @@
+image {
+  width: 150rpx;
+  height: 150rpx;
+}
+
+.information {
+  font-size: large;
+
+}
+
+.page-body-wrapper {
+  margin-top: 0;
+}
+
+.page-body-info {
+  padding-bottom: 25px;
+}
+
+.time-big {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10rpx;
+}
+
+.slider {
+  width: 92%;
+}
+
+.play-time {
+  font-size: 14px;
+  width: 350px;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.page-body-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30rpx;
+  margin-bottom: 20rpx;
+}
+
+.page-body-button {
+  width: 250rpx;
+  text-align: center;
+}
+
+.view-contain-ti {
+  display: flex;
+  height: 100rpx;
+  margin: 20rpx;
+  border: 5rpx solid #f76968;
+  border-radius: 12rpx;
+  background-color: white;
+}
+
+.text-ti {
+  position: absolute;
+  font-size: 38rpx;
+  background: white;
+  margin: -28rpx 0 0 40rpx;
+  padding: 0 5rpx;
+  color: rgb(143, 145, 156);
+}
+
+.input1 {
+  font-size: 50rpx;
+  text-align: center;
+  margin-top: 3%;
+  margin-left: 45%;
+  /* margin-left: 25%; */
+  /* width: 90%; */
+
+}
+
+.view-contain-text {
+  display: flex;
+  height: 300rpx;
+  margin: 20rpx;
+  margin-top: 30rpx;
+  border: 5rpx solid #f76968;
+  border-radius: 12rpx;
+  background-color: white;
+}
+
+.input2 {
+  font-size: 40rpx;
+  margin-top: 30rpx;
+  margin-left: 5%;
+  width: 90%;
+}
+.part1{
+  justify-content: center;
+  display: flex
+}

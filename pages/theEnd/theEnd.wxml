@@ -1,0 +1,35 @@
+<view class="global-page">
+  <view class="part1">
+    <view class="title">您已完成所有测试，可点击确认按钮以返回主页，您也可以点击重新开始按钮以进行重新测试，但是需要注意本操作会清空之前所有的答题记录，望谨慎考虑！</view>
+  </view>
+
+
+  <view class="part2">
+    <!-- <view style="justify-content: center;display: flex;padding-top: 10%;padding-bottom: 15%;">
+      <view class="button" hover-class="hover" bindtap="warning">重新测试</view>
+    </view> -->
+    <!-- <view style="height: 50%;justify-content: center;padding-left: 26%;">
+      <view style="width: 350rpx;">
+        <van-button square type="primary" color=" #f76968" size='large' bind:click='warning'>
+          <text style="font-size: 50rpx;">重新测试</text>
+        </van-button>
+      </view>
+    </view> -->
+    <view style="justify-content: center;display: flex;">
+      <button style="background-color: #f76968;" class='weui-btn' type="warn" bindtap="warning"><text>重新测试</text></button>
+    </view>
+    <view style="justify-content: center;display: flex;margin-top: 50rpx;">
+      <button style="background-color: #f76968;" class='weui-btn' type="warn" bindtap="return2index"><text>返回主页</text></button>
+    </view>
+    <!-- <view style="height: 50%;justify-content: center;padding-left: 26%;">
+      <view style="width: 350rpx;">
+        <van-button square type="primary" color=" #f76968" size='large' bind:click='return2index'>
+          <text style="font-size: 50rpx;">返回主页</text>
+        </van-button>
+      </view>
+    </view> -->
+    <!-- <view style="justify-content: center;display: flex">
+      <view class="button" hover-class="hover" bindtap="return2index">返回主页</view>
+    </view> -->
+  </view>
+</view>

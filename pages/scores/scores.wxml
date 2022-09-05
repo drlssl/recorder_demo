@@ -1,0 +1,56 @@
+<view class="table">
+  <view class="tr bg-header">
+    <view class="th">题号</view>
+    <view class="th">成绩</view>
+  </view>
+  <!-- <scroll-view class="scbg" scroll-y="true">
+    <block wx:for="{{listData}}" wx:key="unique">
+      <view class="tr bg-items">
+        <view class="td" bindtap="go2remark" data-index="{{item}}">第{{item}}题</view>
+        <input bindinput="scoresInput"></input>
+      </view>
+    </block>
+
+  </scroll-view> -->
+  <view class="tr">
+    <!-- <view class="td td1">2018/02/12</view> -->
+    <view class="td td2" data-index="1" data-comment="{{scoreInfo.comment01}}" data-score="{{scoreInfo.score01}}" bindtap="go2remark">score01</view>
+    <view class="td td3" data-index="1" data-comment="{{scoreInfo.comment01}}" data-score="{{scoreInfo.score01}}" bindtap="go2remark">{{scoreInfo.score01}}</view>
+  </view>
+  <view class="tr">
+    <!-- <view class="td td1">2018/02/12</view> -->
+    <view class="td td2" data-index="2" data-comment="{{scoreInfo.comment02}}" data-score="{{scoreInfo.score02}}" bindtap="go2remark">score02</view>
+    <view class="td td3" data-index="2" data-comment="{{scoreInfo.comment02}}" data-score="{{scoreInfo.score02}}" bindtap="go2remark">{{scoreInfo.score02}}</view>
+  </view>
+  <view class="tr">
+    <!-- <view class="td td1">2018/02/12</view> -->
+    <view class="td td2" data-index="3" data-comment="{{scoreInfo.comment03}}" data-score="{{scoreInfo.score03}}" bindtap="go2remark">score03</view>
+    <view class="td td3" data-index="3" data-comment="{{scoreInfo.comment03}}" data-score="{{scoreInfo.score03}}" bindtap="go2remark">{{scoreInfo.score03}}</view>
+  </view>
+  <view class="tr">
+    <!-- <view class="td td1">2018/02/12</view> -->
+    <view class="td td2" data-index="4" data-comment="{{scoreInfo.comment04}}" data-score="{{scoreInfo.score04}}" bindtap="go2remark">score04</view>
+    <view class="td td3" data-index="4" data-comment="{{scoreInfo.comment04}}" data-score="{{scoreInfo.score04}}" bindtap="go2remark">{{scoreInfo.score04}}</view>
+  </view>
+
+  <view class="tr">
+    <!-- <view class="td td1">2018/02/12</view> -->
+    <view class="td td2">TOTAL</view>
+    <view class="td td3">{{scoreInfo.total_score}}</view>
+  </view>
+
+</view>
+
+<!-- <view class="container">
+  <view open-type="redirect" class="button" hover-class="hover" bindtap="confirm">确认</view>
+</view> -->
+<!-- <view style="height: 70%;justify-content: center;padding-top: 8%;padding-left: 26%;">
+  <view style="width: 350rpx;">
+    <van-button square type="primary" color=" #f76968" size='large' bind:click='confirm'>
+      <text style="font-size: 40rpx;">确认</text>
+    </van-button>
+  </view>
+</view> -->
+<view style="justify-content: center;display: flex;margin-top: 70rpx;">
+  <button style="background-color: #f76968;" class='weui-btn' type="warn" bindtap="confirm"><text style="font-size: 50rpx;">确认</text></button>
+</view>

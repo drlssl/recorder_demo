@@ -1,0 +1,57 @@
+<!--pages/enrol.wxml-->
+<view class="whole-page">
+  <view class="part1">
+    <view class="input-part">
+      <view class="view-contain-ti">
+        <text class="text-ti">姓名</text>
+        <input placeholder="请输入姓名" placeholder-class="plas" class="input" bindinput="nameInput"></input>
+      </view>
+    </view>
+    <view class="input-part">
+      <view class="view-contain-ti">
+        <text class="text-ti">学号/工号</text>
+        <input placeholder="请输入学号/工号" placeholder-class="plas" class="input" type="number" bindinput="idInput"></input>
+      </view>
+    </view>
+    <view class="input-part">
+      <view class="view-contain-ti">
+        <text class="text-ti">登陆密码</text>
+        <input placeholder="请输入登陆密码" placeholder-class="plas" class="input" type="password" bindinput="passwordInput"></input>
+      </view>
+    </view>
+    <view class="input-part">
+      <view class="view-contain-ti">
+        <text class="text-ti">确认密码</text>
+        <input placeholder="请输入确认密码" placeholder-class="plas" class="input" type="password" bindinput="passwordInputAck"></input>
+      </view>
+    </view>
+
+    <view class="radio-part">
+      <van-radio-group value="{{ radio }}" bind:change="onChange" direction='horizontal'>
+        <van-radio shape="square" checked-color='#f76968' name="student" icon-size="50rpx"><text class="radioText">我是学生</text></van-radio>
+        <van-radio disabled='{{true}}' label-disabled='{{true}}' shape="square" checked-color='#f76968' name="teacher" icon-size="50rpx"><text class="radioText">我是教师</text></van-radio>
+      </van-radio-group>
+    </view>
+  </view>
+
+  <view class="part2">
+    <!-- <view style="height:70%;display: flex;justify-content: center;padding-top: 8%;">
+      <view class="button" hover-class="hover" bindtap="regist">注册</view>
+    </view> -->
+    <!-- <view style="height: 70%;justify-content: center;padding-top: 8%;padding-left: 26%;">
+      <view style="width: 350rpx;">
+        <van-button square type="primary" color=" #f76968" size='large' bind:click='regist'>
+          <text style="font-size: 50rpx;">注册</text>
+        </van-button>
+      </view>
+    </view> -->
+    <view style="justify-content: center;display: flex;padding-top: 80rpx;">
+      <button style="background-color: #f76968;" class='weui-btn' type="warn" bindtap="regist">
+        <text style="font-size: 50rpx;">注册</text></button>
+    </view>
+    <view class="cha" style="padding-top: 50rpx;" bindtap="signIn">
+      <text class="no">已有帐号，</text><text style="color: blue;">点我登录</text>
+    </view>
+  </view>
+
+</view>

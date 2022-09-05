@@ -1,0 +1,40 @@
+<view bindtap="getUserInfo">
+ 
+  <view class="flex padding justify-center margin-top-xl" >
+    <image class="cu-avatar round lg" src="{{avatar}}">
+    </image>
+  </view>
+
+  <view class="flex justify-center padding-bottom-xl">
+    <view class="cu-capsule radius padding-right">
+      <view class="cu-tag bg-red">
+        <text>姓名</text>
+      </view>
+      <text class="cu-tag line-red">{{name}}</text>
+    </view>
+  </view>
+</view>
+
+<view class='nav-list margin-top-xl'>
+  <view open-type="redirect" bindtap="go2exam" class="nav-li bg-cyan">
+    <view class="nav-title margin">测试</view>
+    <view class="nav-name margin">exam</view>
+    <text class='cuIcon-copy margin'></text>
+  </view>
+  <view open-type="redirect" bindtap="scoreCheck" class="nav-li bg-blue">
+    <view class="nav-title margin">查分</view>
+    <view class="nav-name margin">score</view>
+    <text class='cuIcon-search margin'></text>
+  </view>
+  <view open-type="redirect" bindtap="auth" class="nav-li bg-pink">
+    <view class="nav-title margin">授权</view>
+    <view class="nav-name margin">authorize</view>
+    <text class='cuIcon-like margin'></text>
+  </view>
+  <view open-type="redirect" bindtap="quit" class="nav-li bg-yellow">
+    <view class="nav-title margin">退出</view>
+    <view class="nav-name margin">quit</view>
+    <text class='cuIcon-exit margin'></text>
+  </view>
+
+</view>

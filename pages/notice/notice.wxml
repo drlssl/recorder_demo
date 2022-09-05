@@ -1,0 +1,17 @@
+<!--pages/preparation/preparation.wxml-->
+
+<view class="global-page">
+
+  <view class="part1">
+    <text class="title">注意事项</text>
+  </view>
+  <view class="part2">
+    <view class='description'>同学你好，欢迎参加英语口语测评。本测评共包含四个部分，总计用时约10-15分钟。题型包括单词朗读、任选问题回答、任选问题描述和观点描述。为保证测评效果，建议您在安静的环境下，佩戴耳机和话筒完成测评。再次感谢您的配合。</view>
+  </view>
+  <view>
+    <view class="button" bindtap="click">确认</view>
+  </view>
+
+
+
+</view>

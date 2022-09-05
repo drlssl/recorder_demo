@@ -1,0 +1,20 @@
+<!--pages/preparation04/preparation04.wxml-->
+<view class="global-page">
+
+  <view class="part1">
+    <text class="title">Question 4</text>
+  </view>
+  <view class="part2">
+
+    <view class='description'>
+      <text decode="{{true}}">Select one topic from the two and give your opinions on it. The total speaking time is no more than 1 minute, and you can prepare for 90 seconds. </text>
+    </view>
+  </view>
+  <view class="part3">
+    <view style="justify-content: center;display: flex;">
+      <button style="background-color: #f76968;" class='weui-btn' type="warn" bindtap="click"><text>确认\nconfirm</text></button>
+    </view>
+    <!-- <view class="button" hover-class="hover" bindtap="click">Confirm</view> -->
+  </view>
+
+</view>

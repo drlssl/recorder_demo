@@ -1,0 +1,188 @@
+/* pages/question03/question03.wxss */
+/* .global-page {
+  height: 100vh;
+} */
+
+.topic-image {
+  width: 100%;
+  height: 100%;
+}
+
+image {
+  /* padding-top: 3%; */
+  width: 150rpx;
+  height: 150rpx;
+}
+
+.title {
+  font-size: medium;
+  font-style: oblique;
+  padding-left: 20rpx;
+  /* padding-top: 30rpx; */
+  padding-right: 20rpx;
+  text-align: justify;
+}
+
+.timeLeft {
+  padding-top: 1%;
+  height: 50%;
+  /* padding-bottom: 0%; */
+}
+
+.part1 {
+  height: 150rpx;
+}
+
+.part2 {
+  /* padding-top: 5%; */
+  justify-content: center;
+  height: 600rpx;
+}
+
+.part3 {
+  height: 10%;
+  /* padding-top: 2%; */
+}
+
+.part4 {
+  height: 23%;
+}
+
+.part5 {
+  padding-top: 8%;
+  height: 18%;
+}
+
+.page-section {
+  height: 100%;
+}
+
+.swiper {
+  width: 91%;
+  padding-top: 10%;
+  margin-left: 5%;
+}
+
+/* .swiper-item{
+  height: 500rpx;
+} */
+
+.page-body-time {
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-body-buttons {
+  height: 60%;
+  display: flex;
+  padding-top: 2%;
+  padding-left: 70rpx;
+}
+
+.topic-text {
+  padding-bottom: 3%;
+  font-size: xx-large;
+  font-weight: 1000;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.topic-content {
+  padding-top: 50rpx;
+}
+
+.content-view {
+  flex-direction: column;
+  display: flex;
+}
+
+.content-question {
+  font-style: oblique;
+  font-size: 40rpx;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+.content-text {
+  padding-top: 10rpx;
+  font-size: 40rpx;
+  font-weight: 500;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+/* .page-body-wrapper {
+  justify-content: space-between;
+  flex-grow: 1;
+  margin-bottom: 150rpx;
+} */
+
+.time-big {
+  font-size: 40rpx;
+  padding-top: 30rpx;
+}
+
+.time-small {
+  font-size: 30rpx;
+}
+
+
+.button-stop-record {
+  width: 100rpx;
+  height: 100rpx;
+  border: 10px solid #fff;
+  background-color: #f55c23;
+  border-radius: 115rpx;
+  margin: 0 auto;
+}
+
+.caption {
+  font-size: larger;
+  height: 40%;
+  padding-top: 18rpx;
+  text-align: center;
+  color: #f55c23;
+}
+
+.radio_group {
+  padding-top: 4%;
+  width: 90%;
+  height: 60%;
+  columns: 2;
+  margin-left: 5%;
+}
+
+
+.timeBetweenTopic {
+  padding-top: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.radio-section {
+  padding-top: 3%;
+  display: flex;
+  justify-content: center;
+}
+
+.radioText {
+  font-size: 40rpx;
+  font-weight: 300;
+  display: flex;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}

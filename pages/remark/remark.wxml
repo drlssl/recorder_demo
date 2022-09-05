@@ -1,0 +1,60 @@
+<view class="part1">
+  <text class="information">学号：{{stuID}} 题目：question {{question_index}}</text>
+</view>
+
+
+<view class="container page" data-weui-theme="{{theme}}">
+
+
+  <view class="page-section">
+    <view class="page-body-info">
+      <text class="time-big">{{formatedPlayTime}}</text>
+      <slider class="slider" min="0" max="180" step="1" value="{{playTime}}" bindchange="seek"></slider>
+    </view>
+
+    <view class="page-body-buttons">
+      <block wx:if="{{playing === true}}">
+        <view class="page-body-button" bindtap="stop">
+          <image src="/image/stop.png"></image>
+        </view>
+        <view class="page-body-button" bindtap="pause">
+          <image src="/image/pause.png"></image>
+        </view>
+      </block>
+      <block wx:if="{{playing === false}}">
+        <view class="page-body-button"></view>
+        <view class="page-body-button" bindtap="play">
+          <image src="/image/play.png"></image>
+        </view>
+      </block>
+      <view class="page-body-button"></view>
+    </view>
+  </view>
+</view>
+
+<view class="view-contain-ti">
+  <text class="text-ti">成绩</text>
+  <input placeholder="请在此处输入您的打分" value="{{score!=='null'?score:''}}" placeholder-class="plas" class="input1" type="number" bindinput="gradeInput"></input>
+</view>
+
+<view class="view-contain-text">
+  <text class="text-ti">评价</text>
+  <textarea placeholder="请在此处输入评价（140字内）" value="{{comment!=='null'?comment:''}}" placeholder-class="plas" class="input2" bindinput="commentInput"></textarea>
+</view>
+
+
+<!-- <view style="padding-top:10%;display: flex;justify-content: center;">
+  <view class="button" hover-class="hover" bindtap="submit">确认</view>
+</view> -->
+<!-- <view style="height: 70%;justify-content: center;padding-top: 8%;padding-left: 26%;">
+  <view style="width: 350rpx;">
+    <van-button square type="primary" color=" #f76968" size='large' bind:click='submit'>
+      <text style="font-size: 40rpx;">确认</text>
+    </van-button>
+  </view>
+</view> -->
+
+<view style="justify-content: center;display: flex;padding-top: 10%;">
+  <button style="background-color: #f76968;" class='weui-btn' type="warn" bindtap="submit">
+    <text style="font-size: 50rpx;">确认</text></button>
+</view>

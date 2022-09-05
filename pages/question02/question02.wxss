@@ -1,0 +1,192 @@
+/* pages/question02/question02.wxss */
+.global-page {
+  height: 100vh;
+}
+
+.topic-image {
+  width: 100%;
+  height: 100%;
+}
+
+image {
+  width: 150rpx;
+  height: 150rpx;
+}
+
+.title {
+  font-size: medium;
+  font-style: oblique;
+  /* height: 75%; */
+  padding-left: 30rpx;
+  /* padding-top: 30rpx; */
+  padding-right: 30rpx;
+  /* text-align: justify; */
+}
+
+.timeLeft {
+  padding-top: 2%;
+  /* height: 60rpx; */
+  /* padding-bottom: 20%; */
+}
+
+.part1 {
+  height: 10%;
+  padding-top: 3%;
+}
+
+.part2 {
+  padding-top: 3%;
+  height: 35%;
+}
+
+.part3 {
+  height: 15%;
+}
+
+.part4 {
+  height: 26%;
+}
+
+.part5 {
+  /* padding-top: 20rpx; */
+  height: 14%;
+}
+
+.page-section {
+  height: 100%;
+}
+
+.swiper {
+  width: 80%;
+  /* height: 700rpx; */
+  margin-left: 10%;
+  /* margin-top: 5%; */
+}
+
+.swiper-item {
+  height: 500rpx;
+}
+
+.page-body-time {
+  /* margin-top:5% ; */
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-body-buttons {
+  height: 60%;
+  display: flex;
+  padding-left: 70rpx;
+}
+
+.topic-text {
+  padding-top: 20rpx;
+  font-size: 80rpx;
+  font-weight: 1000;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-text {
+  padding-top: 10%;
+  /* margin-top: 40rpx; */
+  font-size: 40rpx;
+  display: flex;
+  text-align: center;
+}
+
+/* 
+.page-body-wrapper {
+  justify-content: space-between;
+  flex-grow: 1;
+  margin-bottom: 150rpx;
+} */
+
+.time-big {
+  font-size: 40rpx;
+  /* margin: 10px; */
+}
+
+.time-small {
+  font-size: 30rpx;
+}
+
+.button-stop-record {
+  width: 100rpx;
+  height: 100rpx;
+  border: 10px solid #fff;
+  background-color: #f55c23;
+  border-radius: 115rpx;
+  margin: 0 auto;
+}
+
+
+.caption {
+  font-size: larger;
+  height: 40%;
+  padding-top: 18rpx;
+  text-align: center;
+  color: #f55c23;
+}
+
+.radio_group {
+  width: 90%;
+  height: 60%;
+  columns: 3;
+  margin-left: 5%;
+  /* margin-top: 10%; */
+  /* column-gap: 20rpx; */
+  /* letter-spacing: 5px;
+  line-height: 28px; */
+}
+
+.label {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* display: flex; */
+  /* display: inline-block; */
+  /* width: 100%; */
+  /* height: 100%; */
+  /* margin-left: 180rpx; */
+}
+
+.label-text {
+  font-size: x-large;
+  /* display: flex;
+  flex-direction: row;
+  justify-content: center; */
+  /* display: inline-block; */
+}
+
+.buttonhover {
+  margin-top: 10rpx;
+  width: 70%;
+  background-color: #e25050;
+}
+
+.countDown {
+  text-align: center;
+}
+
+.radio-section{
+  display: flex;
+  justify-content: center;
+}
+
+.radioText{
+  font-size: 40rpx;
+  font-weight: 300;
+  display: flex;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}

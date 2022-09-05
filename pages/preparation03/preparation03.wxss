@@ -1,0 +1,34 @@
+/* pages/preparation01/preparation01.wxss */
+.global-page{
+  height: 100vh;
+}
+
+.part1{
+  height: 30%;
+}
+
+.part2{
+  height: 50%;
+}
+
+.part3{
+  height: 20%;
+}
+
+.title {
+  font-size: 70rpx;
+  font-weight: 1000;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} 
+
+.description{
+  font-size: 45rpx;
+  padding-left: 50rpx;
+  padding-right: 50rpx;
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+}

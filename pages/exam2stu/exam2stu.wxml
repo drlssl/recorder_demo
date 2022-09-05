@@ -1,0 +1,25 @@
+<!-- 这个是一个大的容器 -->
+<view class="container">
+  <!-- ================================== -->
+  <!-- 这是我的测试 -->
+  <!-- <view>
+    <text>this is the 15</text>
+    <button bindtap="getStuID" data-index="15">listen!</button>
+  </view>
+
+  <view>
+    <text>this is the 16</text>
+    <button bindtap="getStuID" data-index="16">listen!</button>
+  </view> -->
+
+  <view>
+    <text>play the voice whose stuID is 51515</text>
+    <button bindtap="start2play" data-index="51515">listen!</button>
+  </view>
+
+  <view>
+    <text>play the voice whose stuID is 5758</text>
+    <button bindtap="start2play" data-index="5758">listen!</button>
+  </view>
+
+</view>

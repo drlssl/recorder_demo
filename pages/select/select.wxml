@@ -1,0 +1,11 @@
+<!-- <cu-custom bgColor="bg-gradual-pink" isBack='{{false}}'>
+  <view slot="content">首页</view>
+</cu-custom> -->
+
+ <view class='nav-list margin-top-xl'>
+    <navigator open-type="redirect"  url="/pages/enroll/enroll" data-index="{{item.name}}"class="nav-li bg-{{item.color}}" wx:for="{{elements}}" wx:key >
+      <view class="nav-title margin">{{item.title}}</view>
+      <view class="nav-name margin">{{item.name}}</view>
+    </navigator>
+  </view>
+ 

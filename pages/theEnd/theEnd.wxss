@@ -1,0 +1,34 @@
+/* pages/theEnd/theEnd.wxss */
+/* .global-page {
+  height: 100vh;
+} */
+
+.part1{
+  height:700rpx
+}
+
+.part2{
+  height: 300rpx;
+}
+
+.title {
+  font-weight: 500;
+  font-size: x-large;
+  padding-left: 30rpx;
+  padding-top: 30rpx;
+  padding-right: 30rpx;
+  /* height: 20%; */
+  text-indent:2em
+}
+
+.button {
+  height: 100rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.buttonhover {
+  margin-top: 10rpx;
+  width: 70%;
+  background-color: #e25050;
+}

@@ -1,0 +1,90 @@
+.table {
+  border: 0px solid darkgray;
+  font-size: 12px;
+}
+.tr {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 100rpx;
+  align-items: center;
+}
+/* .td {
+    width:40%;
+    justify-content: center;
+    text-align:center;
+    font-size: medium;
+} */
+.bg-header{
+  background: snow;
+}
+/* .th {
+  width: 40%;
+  justify-content: center;
+  background: #f76968;
+  color: #fff;
+  display: flex;
+  height: 90rpx;
+  align-items: center;
+  font-size: medium;
+} */
+
+.scgb {
+  background-color: #EFEFEF;
+  width: 100rpx;
+  height: 91%;
+  left: 0rpx;
+  right: 0rpx;
+  top: 0rpx;
+  position: absolute;
+}
+
+.history-table-wrap{
+  position: absolute;
+  width: 668rpx;
+  height: 578rpx;
+  left: 50%;
+  margin-left: -334rpx;
+  top: 70rpx;
+  overflow-y: scroll;
+  overflow-x: hidden;
+ }
+ /* 表格代码  */
+ .table{
+  border:1px solid #dadada;
+  border-right:0;
+  border-bottom: 0;
+  width: 98%;
+  margin-left: 1%;
+ }
+ .tr{
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+ }
+ .th,.td{
+  padding: 10px;
+  border-bottom: 1px solid #dadada;
+  border-right: 1px solid #dadada;
+  text-align: center;
+  width: 100%;
+ }
+ .td2 .td3{
+  width: 40%;
+  /* margin-bottom: 10rpx; */
+  /* height: 30rpx; */
+ }
+ .th{
+  height: 100rpx;
+  background-color:#f76968;
+  font-size: 40rpx;
+  color: white;
+  width: 375rpx;
+ }
+ .td{
+  font-size: 38rpx;
+  height: 90rpx;
+  color: #ec9480;
+  justify-content: center;
+  text-align:center;
+ }

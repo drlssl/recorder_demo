@@ -1,0 +1,31 @@
+<!--pages/preparation/preparation.wxml-->
+
+<view class="global-page">
+
+  <view class="part1">
+    <text class="title">Question 1</text>
+  </view>
+  <view class="part2">
+    <view class='description'>
+      <text decode="{{true}}">
+        In this section, you are going to read 30 words. Try to read loudly and clearly.
+      </text>
+    </view>
+  </view>
+  <view class="part3">
+    <!-- <view class="button" hover-class="hover" bindtap="click" data-content="In this section, you are going to read 30 words. Try to read loudly and clearly.">Confirm</view> -->
+    <!-- <view style="height: 90%;justify-content: center;padding-top: 8%;padding-left: 26%;">
+      <view style="width: 350rpx;">
+        <van-button square type="primary" color=" #f76968" size='large' bind:click='click'>
+          <text style="font-size: 40rpx;">开始\nstart</text>
+        </van-button>
+      </view>
+    </view> -->
+    <view style="justify-content: center;display: flex;">
+      <button style="background-color: #f76968;" class= 'weui-btn' type="warn" bindtap="click"><text style="font-size: 35rpx;">开始\nstart</text></button>
+    </view>
+  </view>
+
+
+
+</view>

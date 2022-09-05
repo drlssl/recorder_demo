@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/question01/question01",
+    "pages/register/register",
+    "pages/help/help",
+    "pages/correct/correct",
+    "pages/scores/scores",
+    "pages/remark/remark",
+    "pages/remark4stu/remark4stu",
+    "pages/addTeacher/addTeacher",
+    "pages/question04/question04",
+    "pages/question03/question03",
+    "pages/question02/question02",
+    "pages/preparation02/preparation02",
+    "pages/preparation01/preparation01",
+    "pages/teacherIndex/teacherIndex",
+    "pages/index/index",
+    "pages/theEnd/theEnd",
+    "pages/preparation03/preparation03",
+    "pages/preparation04/preparation04",
+    "pages/enroll/enroll",
+    "pages/notice/notice",
+    "pages/recorder/recorder",
+    "pages/select/select",
+    "pages/main/main"
+  ],
+  
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "mp-form": "weui-miniprogram/form/form",
+    "mp-toptips": "weui-miniprogram/toptips/toptips",
+    "mp-cells": "weui-miniprogram/cells/cells",
+    "mp-cell": "weui-miniprogram/cell/cell",
+    "van-toast": "@vant/weapp/toast/index",
+    "van-overlay": "@vant/weapp/overlay/index",
+    "van-circle": "@vant/weapp/circle/index",
+    "van-button": "@vant/weapp/button/index",
+    "van-radio": "@vant/weapp/radio/index",
+    "van-radio-group": "@vant/weapp/radio-group/index"
+    
+  }
+  
+}

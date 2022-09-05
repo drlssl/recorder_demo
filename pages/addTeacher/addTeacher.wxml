@@ -1,0 +1,62 @@
+<!--pages/enrol.wxml-->
+<view class="whole-page">
+    <view class="part1">
+        <view class="input-part">
+            <view class="view-contain-ti">
+                <text class="text-ti">姓名</text>
+                <input placeholder="请输入教师姓名" placeholder-class="plas" class="input" bindinput="nameInput"></input>
+            </view>
+        </view>
+        <view class="input-part">
+            <view class="view-contain-ti">
+                <text class="text-ti">工号</text>
+                <input placeholder="请输入教师工号" placeholder-class="plas" class="input" type="number" bindinput="idInput"></input>
+            </view>
+        </view>
+        <view class="input-part">
+            <view class="view-contain-ti">
+                <text class="text-ti">登陆密码</text>
+                <input placeholder="请输入登陆密码" placeholder-class="plas" class="input" type="password" bindinput="passwordInput"></input>
+            </view>
+        </view>
+        <view class="input-part">
+            <view class="view-contain-ti">
+                <text class="text-ti">确认密码</text>
+                <input placeholder="请输入确认密码" placeholder-class="plas" class="input" type="password" bindinput="passwordInputAck"></input>
+            </view>
+        </view>
+
+        <view class="radio-part">
+            <van-radio-group value="{{ radio }}" bind:change="onChange" direction='horizontal'>
+                <van-radio shape="square" checked-color='#f76968' name="teacher" icon-size="50rpx"><text class="radioText">非管理员</text></van-radio>
+                <van-radio shape="square" checked-color='#f76968' name="admin" icon-size="50rpx"><text class="radioText">管理员</text></van-radio>
+            </van-radio-group>
+        </view>
+    </view>
+
+    <view class="part2">
+        <!-- <view style="height: 60%;justify-content: center;padding-top: 8%;padding-left: 26%;">
+            <view style="width: 350rpx;">
+                <van-button square type="primary" color=" #f76968" size='large' bind:click='regist'>
+                    <text style="font-size: 50rpx;">添加</text>
+                </van-button>
+
+            </view>
+        </view> -->
+        <view style="justify-content: center;display: flex;">
+            <button style="background-color: #f76968;" class='weui-btn' type="warn" bindtap="regist"><text style="font-size: 50rpx;">添加教师</text></button>
+        </view>
+        <view style="justify-content: center;display: flex;margin-top: 70rpx;">
+            <button style="background-color: #f76968;" class='weui-btn' type="warn" bindtap="back"><text style="font-size: 50rpx;">返回主页</text></button>
+        </view>
+        <!-- <view style="height: 70%;justify-content: center;padding-left: 26%;">
+            <view style="width: 350rpx;">
+                <van-button square type="primary" color=" #f76968" size='large' bind:click='back'>
+                    <text style="font-size: 50rpx;">返回主页</text>
+                </van-button>
+
+            </view>
+        </view> -->
+    </view>
+
+</view>

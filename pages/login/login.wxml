@@ -1,0 +1,50 @@
+<view class="whole-page">
+
+  <view class="part1">
+    <image mode="widthFix" class="img" src="/image/import.png"></image>
+  </view>
+  <!-- <view class="part1" style="justify-content: center;display: flex;text-align:center;">
+    <text style="text-align: center;font-size: x-;">语言能力评估系统</text>
+  </view> -->
+
+  <view class="part2">
+    <view class="input-part">
+      <view class="view-contain-ti">
+        <text class="text-ti">账号</text>
+        <input placeholder="请输入账号" placeholder-class="plas" class="input" type="number" bindinput="stuidInput"></input>
+      </view>
+    </view>
+    <view class="input-part">
+      <view class="view-contain-ti">
+        <text class="text-ti">密码</text>
+        <input placeholder="请输入密码" placeholder-class="plas" class="input" type="password" bindinput="passwordInput"></input>
+      </view>
+    </view>
+
+    <view class="radio-part">
+      <van-radio-group value="{{ radio }}" bind:change="onChange" direction='horizontal'>
+        <van-radio shape="square" checked-color='#f76968' name="student" icon-size="50rpx"><text class="radioText">我是学生</text></van-radio>
+        <van-radio shape="square" checked-color='#f76968' name="teacher" icon-size="50rpx"><text class="radioText">我是老师</text></van-radio>
+      </van-radio-group>
+    </view>
+  </view>
+
+  <view class="part3">
+    <!-- <view style="height: 70%;justify-content: center;padding-top: 8%;padding-left: 26%;">
+      <view style="width: 350rpx;">
+        <van-button square type="primary" color=" #f76968" size='large' bind:click='signIn'>
+          <text style="font-size: 50rpx;">登录</text>
+        </van-button>
+      </view>
+    </view> -->
+    <view style="justify-content: center;display: flex;margin-top: 70rpx;">
+      <button style="background-color: #f76968;" class='weui-btn' type="warn" bindtap="signIn"><text style="font-size: 50rpx;">登录</text></button>
+    </view>
+
+    <view style="height: 30%;">
+      <view class="register" bindtap="regist">
+        <text class="no-account">还没有账号？</text><text class="no" style="color:blue">点我注册</text>
+      </view>
+    </view>
+  </view>
+</view>

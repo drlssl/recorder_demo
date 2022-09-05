@@ -1,0 +1,25 @@
+<!--pages/preparation03/preparation03.wxml-->
+<view class="global-page">
+
+  <view class="part1">
+    <text class="title">Question 3</text>
+  </view>
+  <view class="part2">
+    <view class='description'>
+      <text decode="{{true}}">Please choose one of these topics to describe for one minute after 90 seconds for preparation. </text>
+    </view>
+  </view>
+  <view class="part3">
+    <view style="justify-content: center;display: flex;">
+      <button style="background-color: #f76968;" class='weui-btn' type="warn" bindtap="click"><text style="font-size: 35rpx;">下一题\nnext</text></button>
+    </view>
+    <!-- <view style="height: 70%;justify-content: center;padding-left: 26%;">
+      <view style="width: 350rpx;">
+        <van-button square type="primary" color=" #f76968" size='large' bind:click='click'>
+          <text style="font-size: 40rpx;">确认\nconfirm</text>
+        </van-button>
+      </view>
+    </view> -->
+    <!-- <view class="button" hover-class="hover" bindtap="click">Confirm</view> -->
+  </view>
+</view>

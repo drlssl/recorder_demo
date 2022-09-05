@@ -1,0 +1,35 @@
+.table {
+  border: 0px solid darkgray;
+  font-size: 12px;
+}
+.tr {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 100rpx;
+  align-items: center;
+}
+.td {
+    width:40%;
+    justify-content: center;
+    text-align: center;
+    font-size: medium;
+}
+.bg-header{
+  background: snow;
+}
+.th {
+  width: 40%;
+  justify-content: center;
+  background: #f76968;
+  color: #fff;
+  display: flex;
+  height: 90rpx;
+  align-items: center;
+  font-size: 40rpx;
+  font-weight: 400;
+}
+
+.grade{
+  border-bottom: 1rpx solid #f0f0f0;
+}
